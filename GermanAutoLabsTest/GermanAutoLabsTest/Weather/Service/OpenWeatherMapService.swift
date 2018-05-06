@@ -12,6 +12,7 @@ struct OpenWeatherMapService: WeatherServiceProtocol {
   fileprivate let urlPath = "http://api.openweathermap.org/data/2.5/forecast"
 
 
+
   func retrieveWeatherInfo(_ location: CLLocation, completionHandler: @escaping WeatherCompletionHandler) {
     let sessionConfig = URLSessionConfiguration.default
     let session = URLSession(configuration: sessionConfig)

@@ -13,7 +13,7 @@ import MobileCoreServices
 protocol SpeechToTextProtocol {
     func textSpoken(text:String);
 }
-class ViewController: UIViewController,SpeechToTextProtocol {
+class HomeViewController: UIViewController,SpeechToTextProtocol {
     
     var myText:String = "";
     var temperature = ""
@@ -59,7 +59,7 @@ class ViewController: UIViewController,SpeechToTextProtocol {
         st.initSpeech(uiDelegate: self)
         st.startRecording();
         self.audioView.density = 1.0
-        timer = Timer.scheduledTimer(timeInterval: 0.009, target: self, selector: #selector(ViewController.refreshAudioView(_:)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.009, target: self, selector: #selector(HomeViewController.refreshAudioView(_:)), userInfo: nil, repeats: true)
         mapKeywords()
 
     }
@@ -67,12 +67,13 @@ class ViewController: UIViewController,SpeechToTextProtocol {
     func textSpoken(text:String){
         textSpoken = text;
         timer?.invalidate();
+        self.audioView.density = 0.0
         self.audioView.amplitude = 0;
         self.mapKeywords()
     }
     
     
-    func testTextToSpeech()
+    func textToSpeech()
     {
         let textToSpeechApi = TextToSpeech()
         textToSpeechApi.speak(textToSpeak: myText)
@@ -94,14 +95,11 @@ class ViewController: UIViewController,SpeechToTextProtocol {
     }
 }
 
-extension ViewController:WeatherViewModelProtocol{
+extension HomeViewController:WeatherViewModelProtocol{
     
     internal func update(_ weather: Weather) {
         myText = "Final Weather in \(weather.location) is about \(weather.temperature) degrees"
-        print(myText);
-        myText = "Weather report, you current location temperature is \(weather.temperature) degree"
-        print(myText);
-        testTextToSpeech()
+        textToSpeech()
         
     }
 }

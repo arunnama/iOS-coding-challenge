@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9627E352099779800896077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E342099779800896077 /* AppDelegate.swift */; };
-		C9627E372099779800896077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E362099779800896077 /* ViewController.swift */; };
+		C9627E372099779800896077 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E362099779800896077 /* HomeViewController.swift */; };
 		C9627E3A2099779800896077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9627E382099779800896077 /* Main.storyboard */; };
 		C9627E3C2099779800896077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9627E3B2099779800896077 /* Assets.xcassets */; };
 		C9627E3F2099779800896077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9627E3D2099779800896077 /* LaunchScreen.storyboard */; };
@@ -18,8 +18,6 @@
 		C9627E672099833000896077 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E662099833000896077 /* TextToSpeech.swift */; };
 		C9627E6A209986F500896077 /* MappingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E69209986F500896077 /* MappingKeys.swift */; };
 		C9627E6D20999B4000896077 /* MappingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E6C20999B4000896077 /* MappingData.swift */; };
-		C9D0C071209F196C00519423 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9627E7220999FC500896077 /* Alamofire.framework */; };
-		C9D0C072209F196C00519423 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9627E7220999FC500896077 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9D0C0DE209F230900519423 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0DA209F230800519423 /* LocationService.swift */; };
 		C9D0C0DF209F230900519423 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0DB209F230900519423 /* Observable.swift */; };
 		C9D0C0E0209F230900519423 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0DC209F230900519423 /* Error.swift */; };
@@ -31,7 +29,6 @@
 		C9D0C0EF209F233100519423 /* WeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E8209F233100519423 /* WeatherBuilder.swift */; };
 		C9D0C0F2209F233F00519423 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0F0209F233F00519423 /* WeatherServiceProtocol.swift */; };
 		C9D0C0F3209F233F00519423 /* OpenWeatherMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0F1209F233F00519423 /* OpenWeatherMapService.swift */; };
-		C9D0C0F7209F60EF00519423 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */; };
 		C9D0C0F8209F60EF00519423 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9D0C0FA209F716600519423 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0F9209F716600519423 /* SwiftSiriWaveformView.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +58,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C9D0C0F8209F60EF00519423 /* SwiftyJSON.framework in Embed Frameworks */,
-				C9D0C072209F196C00519423 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +67,7 @@
 /* Begin PBXFileReference section */
 		C9627E312099779800896077 /* GermanAutoLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GermanAutoLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9627E342099779800896077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9627E362099779800896077 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9627E362099779800896077 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C9627E392099779800896077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9627E3B2099779800896077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9627E3E2099779800896077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,7 +82,6 @@
 		C9627E662099833000896077 /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
 		C9627E69209986F500896077 /* MappingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingKeys.swift; sourceTree = "<group>"; };
 		C9627E6C20999B4000896077 /* MappingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingData.swift; sourceTree = "<group>"; };
-		C9627E7220999FC500896077 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		C9D0C0DA209F230800519423 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		C9D0C0DB209F230900519423 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C9D0C0DC209F230900519423 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -107,8 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D0C071209F196C00519423 /* Alamofire.framework in Frameworks */,
-				C9D0C0F7209F60EF00519423 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,12 +125,11 @@
 		C9627E282099779700896077 = {
 			isa = PBXGroup;
 			children = (
-				C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */,
 				C9627E332099779800896077 /* GermanAutoLabsTest */,
 				C9627E482099779800896077 /* GermanAutoLabsTestTests */,
 				C9627E532099779800896077 /* GermanAutoLabsTestUITests */,
 				C9627E322099779800896077 /* Products */,
-				C9627E7220999FC500896077 /* Alamofire.framework */,
+				C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,13 +148,12 @@
 			children = (
 				C9D0C0E1209F231300519423 /* Weather */,
 				C9D0C0D8209F21F000519423 /* Common */,
-				C9627E6F20999E7E00896077 /* Networking */,
 				C9627E68209986D100896077 /* SimpleAI */,
 				C9627E652099831500896077 /* TextToSpeech */,
 				C9627E6220997CC500896077 /* SpeechToText */,
-				C9627E342099779800896077 /* AppDelegate.swift */,
-				C9627E362099779800896077 /* ViewController.swift */,
+				C9D0C0FB209F79BD00519423 /* ViewControllers */,
 				C9627E382099779800896077 /* Main.storyboard */,
+				C9627E342099779800896077 /* AppDelegate.swift */,
 				C9627E3B2099779800896077 /* Assets.xcassets */,
 				C9627E3D2099779800896077 /* LaunchScreen.storyboard */,
 				C9627E402099779800896077 /* Info.plist */,
@@ -221,19 +212,13 @@
 			path = MappingData;
 			sourceTree = "<group>";
 		};
-		C9627E6F20999E7E00896077 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		C9D0C0D8209F21F000519423 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				C9D0C0DC209F230900519423 /* Error.swift */,
 				C9D0C0DA209F230800519423 /* LocationService.swift */,
 				C9D0C0DB209F230900519423 /* Observable.swift */,
+				C9D0C0F9209F716600519423 /* SwiftSiriWaveformView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -241,7 +226,6 @@
 		C9D0C0E1209F231300519423 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				C9D0C0F9209F716600519423 /* SwiftSiriWaveformView.swift */,
 				C9D0C0F4209F234600519423 /* Service */,
 				C9D0C0E2209F233000519423 /* Temperature.swift */,
 				C9D0C0E3209F233000519423 /* TemperatureConverter.swift */,
@@ -260,6 +244,14 @@
 				C9D0C0F0209F233F00519423 /* WeatherServiceProtocol.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C9D0C0FB209F79BD00519423 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9627E362099779800896077 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +399,7 @@
 				C9D0C0E0209F230900519423 /* Error.swift in Sources */,
 				C9627E6A209986F500896077 /* MappingKeys.swift in Sources */,
 				C9D0C0F2209F233F00519423 /* WeatherServiceProtocol.swift in Sources */,
-				C9627E372099779800896077 /* ViewController.swift in Sources */,
+				C9627E372099779800896077 /* HomeViewController.swift in Sources */,
 				C9D0C0EA209F233100519423 /* TemperatureConverter.swift in Sources */,
 				C9D0C0EF209F233100519423 /* WeatherBuilder.swift in Sources */,
 				C9D0C0DF209F230900519423 /* Observable.swift in Sources */,
