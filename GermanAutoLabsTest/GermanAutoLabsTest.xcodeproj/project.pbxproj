@@ -14,6 +14,26 @@
 		C9627E3F2099779800896077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9627E3D2099779800896077 /* LaunchScreen.storyboard */; };
 		C9627E4A2099779800896077 /* GermanAutoLabsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E492099779800896077 /* GermanAutoLabsTestTests.swift */; };
 		C9627E552099779800896077 /* GermanAutoLabsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E542099779800896077 /* GermanAutoLabsTestUITests.swift */; };
+		C9627E6420997CE400896077 /* SpeechToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E6320997CE400896077 /* SpeechToText.swift */; };
+		C9627E672099833000896077 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E662099833000896077 /* TextToSpeech.swift */; };
+		C9627E6A209986F500896077 /* MappingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E69209986F500896077 /* MappingKeys.swift */; };
+		C9627E6D20999B4000896077 /* MappingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9627E6C20999B4000896077 /* MappingData.swift */; };
+		C9D0C071209F196C00519423 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9627E7220999FC500896077 /* Alamofire.framework */; };
+		C9D0C072209F196C00519423 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9627E7220999FC500896077 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9D0C0DE209F230900519423 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0DA209F230800519423 /* LocationService.swift */; };
+		C9D0C0DF209F230900519423 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0DB209F230900519423 /* Observable.swift */; };
+		C9D0C0E0209F230900519423 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0DC209F230900519423 /* Error.swift */; };
+		C9D0C0E9209F233100519423 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E2209F233000519423 /* Temperature.swift */; };
+		C9D0C0EA209F233100519423 /* TemperatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E3209F233000519423 /* TemperatureConverter.swift */; };
+		C9D0C0EB209F233100519423 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E4209F233000519423 /* WeatherViewModel.swift */; };
+		C9D0C0EC209F233100519423 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E5209F233000519423 /* Weather.swift */; };
+		C9D0C0ED209F233100519423 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E6209F233100519423 /* WeatherIcon.swift */; };
+		C9D0C0EF209F233100519423 /* WeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0E8209F233100519423 /* WeatherBuilder.swift */; };
+		C9D0C0F2209F233F00519423 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0F0209F233F00519423 /* WeatherServiceProtocol.swift */; };
+		C9D0C0F3209F233F00519423 /* OpenWeatherMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0F1209F233F00519423 /* OpenWeatherMapService.swift */; };
+		C9D0C0F7209F60EF00519423 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */; };
+		C9D0C0F8209F60EF00519423 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9D0C0FA209F716600519423 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0C0F9209F716600519423 /* SwiftSiriWaveformView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +53,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C9D0C073209F196C00519423 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9D0C0F8209F60EF00519423 /* SwiftyJSON.framework in Embed Frameworks */,
+				C9D0C072209F196C00519423 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C9627E312099779800896077 /* GermanAutoLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GermanAutoLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9627E342099779800896077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +82,24 @@
 		C9627E502099779800896077 /* GermanAutoLabsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GermanAutoLabsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9627E542099779800896077 /* GermanAutoLabsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanAutoLabsTestUITests.swift; sourceTree = "<group>"; };
 		C9627E562099779800896077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9627E6320997CE400896077 /* SpeechToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToText.swift; sourceTree = "<group>"; };
+		C9627E662099833000896077 /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		C9627E69209986F500896077 /* MappingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingKeys.swift; sourceTree = "<group>"; };
+		C9627E6C20999B4000896077 /* MappingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingData.swift; sourceTree = "<group>"; };
+		C9627E7220999FC500896077 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		C9D0C0DA209F230800519423 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		C9D0C0DB209F230900519423 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		C9D0C0DC209F230900519423 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C9D0C0E2209F233000519423 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		C9D0C0E3209F233000519423 /* TemperatureConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureConverter.swift; sourceTree = "<group>"; };
+		C9D0C0E4209F233000519423 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		C9D0C0E5209F233000519423 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		C9D0C0E6209F233100519423 /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
+		C9D0C0E8209F233100519423 /* WeatherBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherBuilder.swift; sourceTree = "<group>"; };
+		C9D0C0F0209F233F00519423 /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
+		C9D0C0F1209F233F00519423 /* OpenWeatherMapService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapService.swift; sourceTree = "<group>"; };
+		C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		C9D0C0F9209F716600519423 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D0C071209F196C00519423 /* Alamofire.framework in Frameworks */,
+				C9D0C0F7209F60EF00519423 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +132,12 @@
 		C9627E282099779700896077 = {
 			isa = PBXGroup;
 			children = (
+				C9D0C0F5209F5FAC00519423 /* SwiftyJSON.framework */,
 				C9627E332099779800896077 /* GermanAutoLabsTest */,
 				C9627E482099779800896077 /* GermanAutoLabsTestTests */,
 				C9627E532099779800896077 /* GermanAutoLabsTestUITests */,
 				C9627E322099779800896077 /* Products */,
+				C9627E7220999FC500896077 /* Alamofire.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +154,12 @@
 		C9627E332099779800896077 /* GermanAutoLabsTest */ = {
 			isa = PBXGroup;
 			children = (
+				C9D0C0E1209F231300519423 /* Weather */,
+				C9D0C0D8209F21F000519423 /* Common */,
+				C9627E6F20999E7E00896077 /* Networking */,
+				C9627E68209986D100896077 /* SimpleAI */,
+				C9627E652099831500896077 /* TextToSpeech */,
+				C9627E6220997CC500896077 /* SpeechToText */,
 				C9627E342099779800896077 /* AppDelegate.swift */,
 				C9627E362099779800896077 /* ViewController.swift */,
 				C9627E382099779800896077 /* Main.storyboard */,
@@ -125,6 +188,80 @@
 			path = GermanAutoLabsTestUITests;
 			sourceTree = "<group>";
 		};
+		C9627E6220997CC500896077 /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				C9627E6320997CE400896077 /* SpeechToText.swift */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		C9627E652099831500896077 /* TextToSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				C9627E662099833000896077 /* TextToSpeech.swift */,
+			);
+			path = TextToSpeech;
+			sourceTree = "<group>";
+		};
+		C9627E68209986D100896077 /* SimpleAI */ = {
+			isa = PBXGroup;
+			children = (
+				C9627E6B20999B2200896077 /* MappingData */,
+				C9627E69209986F500896077 /* MappingKeys.swift */,
+			);
+			path = SimpleAI;
+			sourceTree = "<group>";
+		};
+		C9627E6B20999B2200896077 /* MappingData */ = {
+			isa = PBXGroup;
+			children = (
+				C9627E6C20999B4000896077 /* MappingData.swift */,
+			);
+			path = MappingData;
+			sourceTree = "<group>";
+		};
+		C9627E6F20999E7E00896077 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C9D0C0D8209F21F000519423 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0C0DC209F230900519423 /* Error.swift */,
+				C9D0C0DA209F230800519423 /* LocationService.swift */,
+				C9D0C0DB209F230900519423 /* Observable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9D0C0E1209F231300519423 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0C0F9209F716600519423 /* SwiftSiriWaveformView.swift */,
+				C9D0C0F4209F234600519423 /* Service */,
+				C9D0C0E2209F233000519423 /* Temperature.swift */,
+				C9D0C0E3209F233000519423 /* TemperatureConverter.swift */,
+				C9D0C0E5209F233000519423 /* Weather.swift */,
+				C9D0C0E8209F233100519423 /* WeatherBuilder.swift */,
+				C9D0C0E6209F233100519423 /* WeatherIcon.swift */,
+				C9D0C0E4209F233000519423 /* WeatherViewModel.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		C9D0C0F4209F234600519423 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0C0F1209F233F00519423 /* OpenWeatherMapService.swift */,
+				C9D0C0F0209F233F00519423 /* WeatherServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +272,7 @@
 				C9627E2D2099779800896077 /* Sources */,
 				C9627E2E2099779800896077 /* Frameworks */,
 				C9627E2F2099779800896077 /* Resources */,
+				C9D0C073209F196C00519423 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,8 +397,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9627E6420997CE400896077 /* SpeechToText.swift in Sources */,
+				C9627E672099833000896077 /* TextToSpeech.swift in Sources */,
+				C9D0C0E9209F233100519423 /* Temperature.swift in Sources */,
+				C9D0C0EB209F233100519423 /* WeatherViewModel.swift in Sources */,
+				C9D0C0EC209F233100519423 /* Weather.swift in Sources */,
+				C9D0C0ED209F233100519423 /* WeatherIcon.swift in Sources */,
+				C9627E6D20999B4000896077 /* MappingData.swift in Sources */,
+				C9D0C0E0209F230900519423 /* Error.swift in Sources */,
+				C9627E6A209986F500896077 /* MappingKeys.swift in Sources */,
+				C9D0C0F2209F233F00519423 /* WeatherServiceProtocol.swift in Sources */,
 				C9627E372099779800896077 /* ViewController.swift in Sources */,
+				C9D0C0EA209F233100519423 /* TemperatureConverter.swift in Sources */,
+				C9D0C0EF209F233100519423 /* WeatherBuilder.swift in Sources */,
+				C9D0C0DF209F230900519423 /* Observable.swift in Sources */,
+				C9D0C0FA209F716600519423 /* SwiftSiriWaveformView.swift in Sources */,
+				C9D0C0DE209F230900519423 /* LocationService.swift in Sources */,
 				C9627E352099779800896077 /* AppDelegate.swift in Sources */,
+				C9D0C0F3209F233F00519423 /* OpenWeatherMapService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -428,6 +582,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AW47F9A3P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GermanAutoLabsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Yadsri.GermanAutoLabsTest;
@@ -443,6 +601,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AW47F9A3P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GermanAutoLabsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Yadsri.GermanAutoLabsTest;

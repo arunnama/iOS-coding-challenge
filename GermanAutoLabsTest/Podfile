@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GermanAutoLabsTest' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+    pod 'SwiftyJSON', '~> 4.0'
+
+  # Pods for GermanAutoLabsTest
+
+  target 'GermanAutoLabsTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+platform :ios, '8.0'
+use_frameworks!
+
+target 'GermanAutoLabsTest' do
+    pod 'SwiftyJSON', '~> 4.0'
+end
+  target 'GermanAutoLabsTestUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
